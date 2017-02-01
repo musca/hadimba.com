@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff8000",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Hadimba temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18118667602539,
+          32.24822321918096
+        ]
+      }
+    }
+  ]
+}
