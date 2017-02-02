@@ -33,7 +33,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/musca/ciyo4b1qu001h2rpndshf5i3u/ti
     maxZoom: 18,
     id: 'musca.ciyo5da77004b2qpfpqhgd4o8-8xryj'
 }).addTo(mymap);
-var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/d60ed24b6e8980cb7d12ce3c84498a3547eaa4ab/map.geojson",{onEachFeature:popUp}).addTo(mymap);
+var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/a0c81058b1e7e5e74cab941af3d0ea9120f0ea54/map.geojson", {onEachFeature:popUp}).addTo(mymap);
 function popUp(f,l){
     var out = [];
     if (f.properties){
