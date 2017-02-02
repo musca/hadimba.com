@@ -16,6 +16,22 @@
           32.24822321918096
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff8000",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Manu Rishi temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.17606365680695,
+          32.2570335027141
+        ]
+      }
     }
   ]
 }
