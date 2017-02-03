@@ -25,13 +25,20 @@
 
 <div id='map'></div>
 <script>
-
-var mymap = L.map('map').setView([32.24822321918096, 77.18118667602539], 13);
+var mymap = L.map('map', {
+		maxZoom: 18,
+    minZoom: 13,
+		zoom: 13,
+		maxBounds: [
+	    //south west
+			[31.658057274089913, 76.9866943359375 ],
+	    //north east
+			[32.400834826722196, 77.59918212890625]
+    ]
+}).setView([32.24822321918096, 77.18118667602539]);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/musca/ciyo4b1qu001h2rpndshf5i3u/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXVzY2EiLCJhIjoiY2l5bzE0cnk4MDA1bzJ4b2RsNTl5dmN0NCJ9.zc5TcCRN9qpbGA0Os-nvUQ', {
-    attribution: 'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'musca.ciyo5da77004b2qpfpqhgd4o8-8xryj'
+    attribution: 'Imagery © <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(mymap);
 var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/a0c81058b1e7e5e74cab941af3d0ea9120f0ea54/map.geojson", {onEachFeature:popUp}).addTo(mymap);
 function popUp(f,l){
