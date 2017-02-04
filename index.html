@@ -8,9 +8,9 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-		<script src="leaflet.ajax.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="leaflet.ajax.min.js"></script>
 </head>
 <body>
 
@@ -40,7 +40,7 @@ var mymap = L.map('map', {
 L.tileLayer('https://api.mapbox.com/styles/v1/musca/ciyo4b1qu001h2rpndshf5i3u/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXVzY2EiLCJhIjoiY2l5bzE0cnk4MDA1bzJ4b2RsNTl5dmN0NCJ9.zc5TcCRN9qpbGA0Os-nvUQ', {
     attribution: 'Imagery © <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(mymap);
-var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/a0c81058b1e7e5e74cab941af3d0ea9120f0ea54/map.geojson", {onEachFeature:popUp}).addTo(mymap);
+var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/648af3c105a69c0cf5397e5f4a31870f0ea63297/map.geojson", {onEachFeature:popUp}).addTo(mymap);
 function popUp(f,l){
     var out = [];
     if (f.properties){
