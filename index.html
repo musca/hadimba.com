@@ -40,7 +40,7 @@ var mymap = L.map('map', {
 L.tileLayer('https://api.mapbox.com/styles/v1/musca/ciyo4b1qu001h2rpndshf5i3u/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXVzY2EiLCJhIjoiY2l5bzE0cnk4MDA1bzJ4b2RsNTl5dmN0NCJ9.zc5TcCRN9qpbGA0Os-nvUQ', {
     attribution: 'Imagery © <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(mymap);
-var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/648af3c105a69c0cf5397e5f4a31870f0ea63297/map.geojson", {onEachFeature:popUp}).addTo(mymap);
+var geojsonLayer = new L.GeoJSON.AJAX("https://cdn.rawgit.com/musca/1c4a58074e6a351edfe9ee407167281f/raw/8bee296108202dab7c31b084ede1e50664a5eb6a/map.geojson", {onEachFeature:popUp}).addTo(mymap);
 function popUp(f,l){
     var out = [];
     if (f.properties){
